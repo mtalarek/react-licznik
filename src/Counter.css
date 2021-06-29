@@ -1,0 +1,26 @@
+.Counter {
+    position: relative;
+    border: 1px solid gray;
+    width: 200px;
+    margin: 10px auto 0 auto;
+    padding: 30px 50px;
+}
+
+.Counter .value {
+    margin-left: 10px;
+}
+
+.Counter .show-clock {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: 10px;
+    color: lightcoral;
+}
+
+.show-clock:hover {
+    text-decoration: underline;
+    color: red;
+    cursor: pointer;
+}

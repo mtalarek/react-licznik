@@ -1,0 +1,14 @@
+button {
+    margin: 5px;
+    padding: 10px;
+    background-color: lightblue;
+    color: black;
+    border: 1px solid rgb(77, 186, 253);
+    transition: all .2s;
+}
+
+button:hover {
+    background-color: lightgray;
+    border: 1px solid gray;
+    cursor: pointer;
+}
