@@ -82,9 +82,9 @@ class Counter extends Component {
         })
     }
 
-    setStepValue = () => {
+    setStepValue = (e) => {
         this.setState({
-            stepValue: 5
+            stepValue: parseInt( e.target.value )
         })
     }
 
@@ -100,7 +100,7 @@ class Counter extends Component {
         return (
             <div className="Counter">
                 <Display displayValue = {this.state.counterValue}/>
-                <ButtonsPanel add ={this.changeValue} reset={this.resetValue} init={this.initValue}/>
+                <ButtonsPanel add ={this.changeValue} reset={this.resetValue} init={this.initValue} buttonStep={this.state.stepValue}/>
                 <Step changeStepValue={this.setStepValue}/>
                 {clockElement}
             </div>
